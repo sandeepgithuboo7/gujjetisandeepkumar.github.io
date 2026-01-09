@@ -1,96 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sandeep Kumar Gujjeti | QA Engineer</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Kumar Gujjeti | QA Engineer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- CSS VARIABLES & RESET --- */
+        :root {
+            --primary-blue: #0056b3;
+            --vibrant-blue: #0061f2;
+            --accent-orange: #ff6b35;
+            --fresh-green: #00c853;
+            --dark-text: #2c3e50;
+            --light-text: #ecf0f1;
+            --bg-white: #ffffff;
+            --bg-light: #f4f7f6;
+        }
 
-<header>
-  <h1>Sandeep Kumar Gujjeti</h1>
-  <p>Quality Engineering Analyst | QA Engineer</p>
-  <a class="btn" href="mailto:gujjeti.sandeep.kumar@gmail.com">Contact Me</a>
-</header>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    Quality Assurance professional with 4+ years of experience in testing web and backend applications.
-    I work closely with developers, product teams, and clients to identify issues early and improve product quality.
-  </p>
-</section>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
 
-<section>
-  <h2>Skills</h2>
-  <ul class="skills">
-    <li>Manual & Automation Testing</li>
-    <li>API & Backend Testing</li>
-    <li>Selenium, Postman</li>
-    <li>SQL & Database Validation</li>
-    <li>Agile / Scrum</li>
-    <li>AWS Basics</li>
-  </ul>
-</section>
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+        }
 
-<section>
-  <h2>Work Experience</h2>
+        /* --- HERO SECTION --- */
+        .hero {
+            /* Vibrant Gradient Background */
+            background: linear-gradient(135deg, var(--vibrant-blue) 0%, var(--fresh-green) 100%);
+            color: var(--bg-white);
+            padding: 80px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            margin-bottom: 2rem;
+        }
 
-  <h3>Quality Engineering Analyst – Infosys</h3>
-  <p class="date">Oct 2025 – Present | Hyderabad</p>
-  <ul>
-    <li>Working on Wells Fargo web applications</li>
-    <li>Testing Accounts & Funds Transfer features</li>
-    <li>Ensuring data accuracy and user experience</li>
-  </ul>
+        .profile-img-container {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 5px solid var(--bg-white);
+            overflow: hidden;
+            background-color: #ddd; /* Placeholder color */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
 
-  <h3>Software Engineer – Hexaware</h3>
-  <p class="date">Jul 2024 – Oct 2025 | Pune</p>
-  <ul>
-    <li>Tested airline booking & backend systems</li>
-    <li>Validated APIs, data flow, and integrations</li>
-    <li>Tracked defects till resolution</li>
-  </ul>
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-  <h3>Associate Engineer – Virtusa</h3>
-  <p class="date">Nov 2021 – Jul 2024 | Hyderabad</p>
-  <ul>
-    <li>Functional, smoke, sanity & regression testing</li>
-    <li>Cross-browser testing</li>
-    <li>Defect reporting & coordination</li>
-  </ul>
-</section>
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
 
-<section>
-  <h2>Projects & Clients</h2>
-  <ul>
-    <li>Wells Fargo – Web Applications</li>
-    <li>Air Canada – Backend Systems</li>
-    <li>Air Canada – UI Applications</li>
-    <li>WebVeda – QC Freelance Support</li>
-  </ul>
-</section>
+        .hero h2 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            background-color: var(--accent-orange);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(255, 107, 53, 0.4);
+        }
 
-<section>
-  <h2>Education & Certifications</h2>
-  <ul>
-    <li>B.Tech – GRIET Hyderabad (8.17 CGPA)</li>
-    <li>Diploma – Govt Polytechnic Nizamabad (92%)</li>
-    <li>ISTQB Foundation Level</li>
-    <li>Oracle Certified Java Associate</li>
-    <li>Postman API Fundamentals</li>
-  </ul>
-</section>
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: gujjeti.sandeep.kumar@gmail.com</p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/sandeep-kumar-gujjeti" target="_blank">View Profile</a></p>
-</section>
+        .contact-item {
+            color: var(--bg-white);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.2s;
+        }
 
-<footer>
-  <p>© 2026 Sandeep Kumar Gujjeti</p>
-</footer>
+        .contact-item:hover {
+            transform: translateY(-3px);
+            color: var(--accent-orange);
+        }
 
-</body>
-</html>
+        /* --- MAIN CONTAINER --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        @media(min-width: 768px) {
+            .container {
+                grid-template-columns: 2fr 1fr; /* Main content left, sidebar right */
+            }
+        }
+
+        /* --- SECTIONS --- */
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+            border-left: 5px solid var(--accent-orange);
+            padding-left: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card {
+            background: var(--bg-white);
+            padding: 25px;
+            border-radius: 12px;
