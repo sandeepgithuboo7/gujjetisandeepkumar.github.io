@@ -3,136 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandeep Kumar Gujjeti | QA Engineer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Sandeep Kumar Gujjeti | QA Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        /* --- CSS VARIABLES & RESET --- */
-        :root {
-            --primary-blue: #0056b3;
-            --vibrant-blue: #0061f2;
-            --accent-orange: #ff6b35;
-            --fresh-green: #00c853;
-            --dark-text: #2c3e50;
-            --light-text: #ecf0f1;
-            --bg-white: #ffffff;
-            --bg-light: #f4f7f6;
-        }
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Sandeep<span>.QA</span></h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="btn-nav">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: var(--bg-light);
-            color: var(--dark-text);
-            line-height: 1.6;
-        }
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="greeting">Hello, I'm</span>
+                <h1>Sandeep Kumar Gujjeti</h1>
+                <h2>Quality Engineering Analyst</h2>
+                <p>4+ years of experience ensuring software quality through Manual & Automation testing. Expert in Selenium, Java, and API Validation.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="./Sandeep_QA_Engineer.pdf" target="_blank" class="btn btn-outline"><i class="fa-solid fa-download"></i> Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="profile.jpg" alt="Sandeep Kumar Gujjeti">
+            </div>
+        </div>
+    </header>
 
-        h1, h2, h3, h4 {
-            font-family: 'Poppins', sans-serif;
-        }
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-desc">
+                I am a dedicated <strong>Quality Assurance Professional</strong> based in <strong>Hyderabad, India</strong>. 
+                I specialize in checking web and mobile applications to ensure smooth user experiences. 
+                My expertise spans across <strong>Agile/Scrum</strong> environments, collaborating with developers to identify defects early using tools like <strong>Selenium, Postman, and Jira</strong>.
+            </p>
+        </div>
+    </section>
 
-        /* --- HERO SECTION --- */
-        .hero {
-            /* Vibrant Gradient Background */
-            background: linear-gradient(135deg, var(--vibrant-blue) 0%, var(--fresh-green) 100%);
-            color: var(--bg-white);
-            padding: 80px 20px;
-            text-align: center;
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-            margin-bottom: 2rem;
-        }
+    <section id="experience" class="bg-light section-padding">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2025 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Quality Engineering Analyst</h3>
+                        <h4>Infosys (Client: Wells Fargo)</h4>
+                        <p>Testing features related to Accounts & Accounts Transfer using Git and Gradle. Ensuring data accuracy and smooth user experience for web applications.</p>
+                    </div>
+                </div>
 
-        .profile-img-container {
-            width: 180px;
-            height: 180px;
-            margin: 0 auto 20px;
-            border-radius: 50%;
-            border: 5px solid var(--bg-white);
-            overflow: hidden;
-            background-color: #ddd; /* Placeholder color */
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
+                <div class="timeline-item">
+                    <div class="timeline-date">July 2024 - Oct 2025</div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <h4>Hexaware Technologies (Client: Air Canada)</h4>
+                        <p>Backend Systems testing. Verified APIs, data flow, and system integrations. Ensured smooth functioning of airline booking services.</p>
+                    </div>
+                </div>
 
-        .profile-img-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+                <div class="timeline-item">
+                    <div class="timeline-date">Nov 2021 - July 2024</div>
+                    <div class="timeline-content">
+                        <h3>Associate Engineer</h3>
+                        <h4>Virtusa (Client: Air Canada)</h4>
+                        <p>UI Application testing. Performed functional, smoke, sanity, and regression testing across various browsers. Logged defects and coordinated with dev teams.</p>
+                    </div>
+                </div>
 
-        .hero h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
+                <div class="timeline-item">
+                    <div class="timeline-date">Short-term Project</div>
+                    <div class="timeline-content">
+                        <h3>QC Freelance</h3>
+                        <h4>WebVeda</h4>
+                        <p>Contributed to testing and quality checks for an education-focused web platform.</p>
+                    </div>
+                </div>
 
-        .hero h2 {
-            font-size: 1.2rem;
-            font-weight: 300;
-            background-color: var(--accent-orange);
-            display: inline-block;
-            padding: 5px 15px;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(255, 107, 53, 0.4);
-        }
+            </div>
+        </div>
+    </section>
 
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-brands fa-java skill-icon"></i>
+                    <h3>Core Tech</h3>
+                    <div class="tags">
+                        <span>Java</span>
+                        <span>Selenium</span>
+                        <span>TestNG</span>
+                        <span>Cucumber (BDD)</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
 
-        .contact-item {
-            color: var(--bg-white);
-            text-decoration: none;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: transform 0.2s;
-        }
+                <div class="skill-card">
+                    <i class="fa-solid fa-screwdriver-wrench skill-icon"></i>
+                    <h3>Tools</h3>
+                    <div class="tags">
+                        <span>Postman</span>
+                        <span>Jira</span>
+                        <span>Git / Bitbucket</span>
+                        <span>Jenkins</span>
+                        <span>AWS</span>
+                    </div>
+                </div>
 
-        .contact-item:hover {
-            transform: translateY(-3px);
-            color: var(--accent-orange);
-        }
+                <div class="skill-card">
+                    <i class="fa-solid fa-list-check skill-icon"></i>
+                    <h3>Methods</h3>
+                    <div class="tags">
+                        <span>Agile / Scrum</span>
+                        <span>Regression Testing</span>
+                        <span>API Validation</span>
+                        <span>Root Cause Analysis</span>
+                        <span>Manual Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        /* --- MAIN CONTAINER --- */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px 40px;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-        }
+    <section id="education" class="bg-light section-padding">
+        <div class="container">
+            <h2 class="section-title">Education & Certificates</h2>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <h3>Bachelor of Technology</h3>
+                    <p>GRIET, Hyderabad (8.17 CGPA)</p>
+                </div>
+                <div class="edu-card">
+                    <h3>Diploma</h3>
+                    <p>Govt. Polytechnic Nizamabad (92%)</p>
+                </div>
+                <div class="edu-card cert">
+                    <h3><i class="fa-solid fa-certificate"></i> ISTQB Foundation</h3>
+                </div>
+                <div class="edu-card cert">
+                    <h3><i class="fa-brands fa-java"></i> Oracle Certified Java Associate</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        @media(min-width: 768px) {
-            .container {
-                grid-template-columns: 2fr 1fr; /* Main content left, sidebar right */
-            }
-        }
+    <footer id="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p>Open for opportunities in Automation Testing and QA.</p>
+            <div class="social-links">
+                <a href="mailto:gujjeti.sandeep.kumar@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com/in/sandeep-kumar-gujjeti" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="tel:+917901084560"><i class="fa-solid fa-phone"></i> +91 7901084560</a>
+            </div>
+            <p class="copyright">&copy; 2026 Sandeep Kumar Gujjeti. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-        /* --- SECTIONS --- */
-        .section-title {
-            font-size: 1.5rem;
-            color: var(--primary-blue);
-            margin-bottom: 20px;
-            border-left: 5px solid var(--accent-orange);
-            padding-left: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .card {
-            background: var(--bg-white);
-            padding: 25px;
-            border-radius: 12px;
+</body>
+</html>
